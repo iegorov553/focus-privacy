@@ -18,9 +18,9 @@ footer{border-top:1px solid #dce2d4;margin-top:40px;padding-top:20px;color:#7381
 </style></head><body><div class="wrap">
 <header><span class="mark" aria-hidden="true">F</span><div><span class="brand">Focus</span><span class="tag">Blur distractions. Keep your privacy.</span></div></header>
 <main><h1>Focus privacy policy</h1>
-<p>Extension version: 0.1.0. Last updated: October 22, 2026.</p>
+<p>Extension versions: 0.1.0–0.2.0. Last updated: October 22, 2026.</p>
 <p>Focus processes pages only on websites the user adds and grants access to in Chrome. It reads page structure to apply blur to selected visual elements. Images and videos are not uploaded or analyzed by external services.</p>
-<p>Only configured domains, category switches, blur strength, enabled state, and pause deadlines are stored in <code>chrome.storage.local</code>. Settings are not synced between devices. Website content scripts cannot directly access this settings store through the extension storage API.</p>
+<p>Only configured domains, category switches, blur strength, image mode, minimum image size, enabled state, and pause deadlines are stored in <code>chrome.storage.local</code>. Settings are not synced between devices. Website content scripts cannot directly access this settings store through the extension storage API.</p>
 <p>There are no accounts, backend services, analytics, advertising SDKs, remote code, extension network requests, or telemetry. Focus does not store browsing history, individual page URLs, page text, images, videos, or form contents. The websites themselves continue to load their own resources normally.</p>
 <h2>Permissions</h2>
 <ul><li><code>storage</code>: save preferences on this device.</li><li><code>scripting</code>: inject bundled CSS and local scripts into permitted websites.</li><li><code>alarms</code>: end a one-hour pause automatically, including after a browser restart.</li><li><code>activeTab</code>: identify the current website when the toolbar button is clicked.</li><li>Optional HTTP/HTTPS host access: requested separately when the user adds a website. Declaring all possible HTTP/HTTPS addresses in <code>optional_host_permissions</code> allows the user to choose any domain; it does not grant access to all websites on installation.</li></ul>
