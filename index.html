@@ -18,17 +18,17 @@ footer{border-top:1px solid #dce2d4;margin-top:40px;padding-top:20px;color:#7381
 </style></head><body><div class="wrap">
 <header><span class="mark" aria-hidden="true">F</span><div><span class="brand">Focus</span><span class="tag">Blur distractions. Keep your privacy.</span></div></header>
 <main><h1>Focus privacy policy</h1>
-<p>Extension versions: 0.1.0–0.2.0. Last updated: October 22, 2026.</p>
-<p>Focus processes pages only on websites the user adds and grants access to in Chrome. It reads page structure to apply blur to selected visual elements. Images and videos are not uploaded or analyzed by external services.</p>
-<p>Only configured domains, category switches, blur strength, image mode, minimum image size, enabled state, and pause deadlines are stored in <code>chrome.storage.local</code>. Settings are not synced between devices. Website content scripts cannot directly access this settings store through the extension storage API.</p>
-<p>There are no accounts, backend services, analytics, advertising SDKs, remote code, extension network requests, or telemetry. Focus does not store browsing history, individual page URLs, page text, images, videos, or form contents. The websites themselves continue to load their own resources normally.</p>
+<p>Applies to Focus versions 0.1.0 through 0.2.3. Last updated: October 26, 2026.</p>
+<p>Focus runs on websites you add and approve in Chrome. It reads page structure, media URLs, and displayed sizes to choose which elements to blur. This processing takes place on your device. Focus does not upload images or videos or send them to an external analysis service.</p>
+<p>The extension stores your configured domains and preferences in <code>chrome.storage.local</code>: enabled state, content categories, blur strength, image mode, minimum image size, and pause deadlines. Settings are not synced between devices. Website content scripts cannot directly read this store through the extension storage API.</p>
+<p>Focus runs without accounts, a backend, analytics, advertising SDKs, or telemetry. All executable code and detection rules ship with the extension. The extension makes no network requests. It keeps no browsing log and does not save individual page URLs, page text, images, videos, or form contents. Websites continue to load their own resources normally.</p>
+<p>Focus uses page data only for the visual filtering features you choose. It does not transfer page data to third parties, sell it, or use it for advertising, profiling, or credit decisions.</p>
 <h2>Permissions</h2>
-<ul><li><code>storage</code>: save preferences on this device.</li><li><code>scripting</code>: inject bundled CSS and local scripts into permitted websites.</li><li><code>alarms</code>: end a one-hour pause automatically, including after a browser restart.</li><li><code>activeTab</code>: identify the current website when the toolbar button is clicked.</li><li>Optional HTTP/HTTPS host access: requested separately when the user adds a website. Declaring all possible HTTP/HTTPS addresses in <code>optional_host_permissions</code> allows the user to choose any domain; it does not grant access to all websites on installation.</li></ul>
-<p>Users can remove configured sites and revoke access in Chrome. Uninstalling the extension removes its local settings. Chrome and the operating system may independently back up browser profiles according to the user&#x27;s preferences.</p>
+<ul><li><code>storage</code>: save your preferences on this device.</li><li><code>scripting</code>: apply bundled CSS and scripts on websites you approve.</li><li><code>alarms</code>: end a site&#x27;s one-hour pause, including when the deadline passes while Chrome is closed.</li><li><code>activeTab</code>: identify the current website when you click the toolbar button.</li><li>Optional HTTP/HTTPS host access: requested for each domain you add, including its subdomains. The broad optional patterns let you choose any domain; they grant no host access at installation.</li></ul>
+<p>You can remove sites in Focus and revoke access in Chrome. Uninstalling the extension removes its local settings. Chrome and your operating system may back up browser profiles according to your settings.</p>
 <h2>Policy website</h2>
-<p>This policy describes the Focus extension. Its public policy page is hosted using GitHub Pages. Visits to that page are handled by GitHub under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. The policy page itself contains no analytics, remote fonts, or tracking scripts.</p>
+<p>This policy page is hosted on GitHub Pages. GitHub handles visits under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. The page contains no analytics, remote fonts, or tracking scripts.</p>
 <h2>Contact</h2>
 <p>For privacy questions or support, email <a href="mailto:focus@iegorov.com">focus@iegorov.com</a>.</p></main>
 <footer>Focus — Blur Previews · <a href="mailto:focus@iegorov.com">Contact support</a></footer>
 </div></body></html>
-
